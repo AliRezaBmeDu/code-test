@@ -5,6 +5,13 @@ const strLen = (str) => {
   
     return str.length;
   };
+
+const revStr = (str) => {
+    return str.split('').reverse().join('');
+}
   
-  module.exports = strLen;
+  module.exports = {
+    strLen,
+    revStr
+  };
   
