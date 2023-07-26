@@ -1,4 +1,4 @@
-const { strLen, revStr } = require('./stringOp');
+const { strLen, revStr, firstCap } = require('./stringOp');
 
 test('returns the length of a non-empty string', () => {
   expect(strLen('Findthefoo')).toBe(10);
@@ -15,3 +15,7 @@ test('throws an error if input string length is greater than 10 characters', () 
 test('reverse a string', () => {
   expect(revStr('beximco')).toBe('ocmixeb');
 });
+
+test('return the string with first letter capital', () => {
+  expect(firstCap('beximco')).toBe('Beximco');
+})

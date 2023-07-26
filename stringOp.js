@@ -9,9 +9,15 @@ const strLen = (str) => {
 const revStr = (str) => {
     return str.split('').reverse().join('');
 }
+
+const firstCap = (str) => {
+  const result =  str[0].toUpperCase() + str.split('').splice(1).join('');
+  return result
+}
   
   module.exports = {
     strLen,
-    revStr
+    revStr,
+    firstCap
   };
   
